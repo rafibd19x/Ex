@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>On the Case! Case Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="shortcut icon" href="images/favicon-32.png" sizes="32x32">
+    <link rel="shortcut icon" href="images/favicon-128.png" sizes="128x128">
+    <link rel="shortcut icon" href="images/favicon-180.png" sizes="180x180">
+    <link rel="shortcut icon" href="images/favicon-192.png" sizes="192x192"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>On the Case!</h1>
+        <h3>a basic case converter</h3>
+    </header>
+
+    <main>
+        <textarea id="original-text"></textarea>
+        <div class="case-button-area">
+            <button class="buttons" id="uppercase-button" onclick="uppercase()">Uppercase</button>
+            <button class="buttons" id="lowercase-button" onclick="lowercase()">Lowercase</button>
+            <button class="buttons" id="sentencecase-button" onclick="sentencecase()">Sentence Case</button>
+            <button class="buttons" id="titlecase-button" onclick="titlecase()">Title Case</button>
+        </div>
+        <button class="buttons" id="copier-button" onclick="textCopier()">Copy Text</button>
+    </main>
+    <footer>
+        <p>© 2022 M.J. Brechner</p>
+    </footer>
+
+    <script src=" js/converter.js" async defer></script>
+    <script src=" js/text-copy.js" async defer></script>
+</body>
+
+</html>
