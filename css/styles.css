@@ -3,7 +3,10 @@
 #519259
 #F0BB62
 #F4EEA9
-https://colorhunt.co/palette/064635519259f0bb62f4eea9*/
+https://colorhunt.co/palette/064635519259f0bb62f4eea9
+
+additional color: #F4EEA9
+*/
 
 
 * {
@@ -68,7 +71,7 @@ main {
 #copier-button {
     margin-top: 1em;
     background-color: #519259;
-    color: #F0BB62;
+    color: #F4EEA9;
     box-shadow: 3px 3px #5192597e;
     
 }
