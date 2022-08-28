@@ -5,4 +5,5 @@ Input your text and convert it to either uppercase, lowercase, title case, or se
 
 Simple as that.
 
+Viewable at https://mjbrechner.github.io/on-the-case/
 © 2022 M.J. Brechner
