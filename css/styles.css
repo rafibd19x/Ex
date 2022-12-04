@@ -9,11 +9,30 @@ additional color: #F4EEA9
 */
 
 
-* {
+body {
     font-family: 'Signika', sans-serif;
     background-color: #064635;
     color: #F0BB62;
     text-align: center;
+}
+
+#mode-toggle {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    margin: 0;
+    padding: 1px;
+    text-align: center;
+    background-color: #F0BB62;
+    color: #064635;
+    font-family: 'Signika', sans-serif;
+    width: 3.5em;
+    height: auto;
+    font-size: .5em;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 header>h1,
@@ -98,6 +117,12 @@ main {
 
 /*tablet query*/
 @media only screen and (min-width: 768px) {
+#mode-toggle {
+    top: 3px;
+    right: 3px;
+    width: 3.8em;
+    font-size: .6em;
+}
 
     h1 {
         font-size: 2.5em;
@@ -133,6 +158,11 @@ main {
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
+    #mode-toggle {
+    width: 4em;
+    font-size: .75em;
+}
+
     h1 {
         font-size: 3em;
     }
