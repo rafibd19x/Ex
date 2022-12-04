@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body onload="modeLoader()">
 
     <header>
-        <h1>On the Case!</h1>
+        <h1 id="test">On the Case!</h1>
         <h2>a basic case converter</h2>
         <button id="mode-toggle" onclick="modeToggle()">Theme</button>
     </header>
@@ -37,7 +37,10 @@
         <button class="buttons" id="copier-button" onclick="textCopier()">Copy Text</button>
     </main>
     <footer>
-        <p>© 2022 M.J. Brechner</p>
+        <p>© 2022 <a href="https://github.com/mjbrechner">M.J. Brechner</a></p>
+        <!-- Profile picture/favicon created by M.J. Brechner © 2022 -->
+        <img class="profile-pic" alt="profile picture"
+            src="https://raw.githubusercontent.com/mjbrechner/diacritics-eraser/main/images/profile-pic.png">
     </footer>
 
     <script src=" js/converter.js" async defer></script>

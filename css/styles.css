@@ -115,14 +115,31 @@ main {
     transform: translate(1px);
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+    margin-bottom: .25em;
+}
+
+a {
+    color: #519259;
+}
+
+.profile-pic {
+    width: 3em;
+    height: 3em;
+}
+
 /*tablet query*/
 @media only screen and (min-width: 768px) {
-#mode-toggle {
-    top: 3px;
-    right: 3px;
-    width: 3.8em;
-    font-size: .6em;
-}
+    #mode-toggle {
+        top: 3px;
+        right: 3px;
+        width: 3.8em;
+        font-size: .6em;
+    }
 
     h1 {
         font-size: 2.5em;
@@ -156,12 +173,22 @@ main {
     }
 }
 
+footer {
+    margin-top: 1.25em;
+    font-size: .9em;
+}
+
+.profile-pic {
+    width: 3.5em;
+    height: 3.5em;
+}
+
 /*desktop query*/
 @media only screen and (min-width: 992px) {
     #mode-toggle {
-    width: 4em;
-    font-size: .75em;
-}
+        width: 4em;
+        font-size: .75em;
+    }
 
     h1 {
         font-size: 3em;
@@ -188,5 +215,14 @@ main {
 
     #copier-button {
         margin-top: 2em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .profile-pic {
+        width: 3.75em;
+        height: 3.75em;
     }
 }
