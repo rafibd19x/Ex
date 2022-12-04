@@ -1,10 +1,9 @@
 'use strict';
 
-// Toggle mode when the theme button is pressed.
-function modeToggle() {
-    
-    if (currentMode === "light") {
-        currentMode = "dark";
+let currentMode = localStorage.getItem("currentMode");
+
+// Get current theme from localStorage upon page load.
+if (currentMode === "dark") {
         document.body.style.backgroundColor = "#064635";
         document.body.style.color = "#F0BB62";
         document.getElementById("mode-toggle").style.backgroundColor = "#F0BB62";
@@ -15,7 +14,6 @@ function modeToggle() {
         localStorage.setItem("currentMode", "dark");
         document.querySelector("a").style.color = "#F0BB62";
     } else {
-        currentMode = "light";
         document.body.style.backgroundColor = "oldlace";
         document.body.style.color = "#064635";
         document.getElementById("mode-toggle").style.backgroundColor = "#064635";
@@ -26,4 +24,3 @@ function modeToggle() {
         localStorage.setItem("currentMode", "light");
         document.querySelector("a").style.color = "#064635";
     }
-}
