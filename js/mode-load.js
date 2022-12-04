@@ -3,7 +3,8 @@
 let currentMode = localStorage.getItem("currentMode");
 
 // Get current theme from localStorage upon page load.
-if (currentMode === "dark") {
+function modeLoader() {
+    if (currentMode === "dark") {
         document.body.style.backgroundColor = "#064635";
         document.body.style.color = "#F0BB62";
         document.getElementById("mode-toggle").style.backgroundColor = "#F0BB62";
@@ -24,3 +25,4 @@ if (currentMode === "dark") {
         localStorage.setItem("currentMode", "light");
         document.querySelector("a").style.color = "#064635";
     }
+}
