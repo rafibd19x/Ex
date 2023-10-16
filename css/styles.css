@@ -86,10 +86,10 @@ main {
 }
 
 .buttons {
-    width: 10em;
-    height: 3em;
-    margin: .25em;
-    font-size: 1em;
+    width: 8.5em;
+    height: 2.5em;
+    margin: .15em;
+    font-size: .9em;
     border-radius: 5px;
     border-style: none;
     cursor: pointer;
@@ -163,6 +163,13 @@ a {
         height: 150px;
         font-size: 1.25em;
     }
+
+.buttons {
+    width: 10em;
+    height: 3em;
+    margin: .25em;
+    font-size: 1.1em;
+}
 
     .case-button-area {
         grid-template-columns: repeat(4, auto);
