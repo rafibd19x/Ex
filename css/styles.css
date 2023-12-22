@@ -28,7 +28,7 @@ body {
     font-family: 'Signika', sans-serif;
     width: 3.5em;
     height: auto;
-    font-size: .5em;
+    font-size: .7em;
     border-style: solid;
     border-radius: 3px;
     border-width: 1px;
@@ -138,7 +138,7 @@ a {
         top: 3px;
         right: 3px;
         width: 3.8em;
-        font-size: .6em;
+        font-size: .8em;
     }
 
     h1 {
@@ -164,12 +164,12 @@ a {
         font-size: 1.25em;
     }
 
-.buttons {
-    width: 10em;
-    height: 3em;
-    margin: .25em;
-    font-size: 1.1em;
-}
+    .buttons {
+        width: 10em;
+        height: 3em;
+        margin: .25em;
+        font-size: 1.1em;
+    }
 
     .case-button-area {
         grid-template-columns: repeat(4, auto);
@@ -178,23 +178,23 @@ a {
     #copier-button {
         margin-top: 1.5em;
     }
-}
 
-footer {
-    margin-top: 1.25em;
-    font-size: .9em;
-}
+    footer {
+        margin-top: 1.25em;
+        font-size: .9em;
+    }
 
-.profile-pic {
-    width: 3.5em;
-    height: 3.5em;
+    .profile-pic {
+        width: 3.5em;
+        height: 3.5em;
+    }
 }
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
     #mode-toggle {
         width: 4em;
-        font-size: .75em;
+        font-size: 1em;
     }
 
     h1 {
@@ -220,8 +220,13 @@ footer {
         font-size: 1.5em;
     }
 
+    .buttons {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
     #copier-button {
-        margin-top: 2em;
+        margin-top: 1.75em;
     }
 
     footer {
