@@ -8,8 +8,14 @@ let textTitleCase;
 
 function upperCase() {
     textInput = document.getElementById("original-text").value;
-    textUpperCase = textInput.toUpperCase();
-    document.getElementById("original-text").value = textUpperCase;
+    
+    const result = textInput.replace(/\./g, "$").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/ +/g, "@").replace(/\n/g, '#');
+             const resultt = result.replace(/\$/g, ".space.");
+    
+    
+    
+    //textUpperCase = textInput.toUpperCase();
+    document.getElementById("original-text").value = resultt;
 }
 
 function lowerCase() {
