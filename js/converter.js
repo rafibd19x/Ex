@@ -12,7 +12,7 @@ function upperCase() {
     const result = textInput.replace(/\./g, "€").replace(/\,/g, "¢").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, 'ক').replace(/V|v/g, 'খ').replace(/N|n/g, 'গ').replace(/M|m/g, 'ঘ').replace(/P|p/g, 'ঙ').replace(/E|e/g, 'চ').replace(/O|o/g, 'ছ').replace(/U|u/g, 'জ').replace(/S|s/g, 'ঝ').replace(/R|r/g, 'ঞ').replace(/ +/g, ",space.").replace(/\n/g, ',Newline,here.');
              
 
-const resultt = result.replace(/\€/g, ",sentence,end.").replace(/\:/g, ',semicolon.').replace(/\¢/g, ",comma.").replace(/\ক/g, ',chuto,b.').replace(/\খ/g, ',Boro,v.').replace(/\গ/g, ',chuto,n.').replace(/\ঘ/g, ',Boro,m.').replace(/\ঙ/g, ',opi,p.').replace(/\চ/g, ',2Ee,e.').replace(/\ছ/g, ',2zo,o.').replace(/\জ/g, ',eou,2u.').replace(/\ঝ/g, ',yes,s.').replace(/\ঞ/g, ',aree,r.');
+const resultt = result.replace(/\€/g, ",sentence,end.").replace(/\:/g, ',semicolon.').replace(/\¢/g, ",comma.").replace(/\ক/g, ',chuto,b.').replace(/\খ/g, ',Boro,v.').replace(/\গ/g, ',chuto,n.').replace(/\ঘ/g, ',Boro,m.').replace(/\ঙ/g, ',opi,p.').replace(/\চ/g, ',2Ee,e.').replace(/\ছ/g, ',2zo,o.').replace(/\জ/g, ',2eou,u.').replace(/\ঝ/g, ',yes,s.').replace(/\ঞ/g, ',aree,r.');
 
 
     
