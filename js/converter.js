@@ -9,7 +9,7 @@ let textTitleCase;
 function upperCase() {
     textInput = document.getElementById("original-text").value;
     
-    const result = textInput.replace(/\./g, "€").replace(/\,/g, "¢").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, ',chuto,b.').replace(/V|v/g, ',Boro,v.').replace(/N|n/g, ',chuto,n.').replace(/M|m/g, ',Boro,m.').replace(/P|p/g, ',pitha,p.').replace(/E|e/g, ',eva,e.').replace(/ +/g, ",space.").replace(/\n/g, ',Newline,here.');
+    const result = textInput.replace(/\./g, "€").replace(/\,/g, "¢").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, ',chuto,b.').replace(/V|v/g, ',Boro,v.').replace(/N|n/g, ',chuto,n.').replace(/M|m/g, ',Boro,m.').replace(/P|p/g, ',opi,p.').replace(/E|e/g, ',2Ee,e.').replace(/O|o/g, ',zo,o.').replace(/U|u/g, ',eou,u.').replace(/S|s/g, ',yes,s.').replace(/R|r/g, ',aree,r.').replace(/ +/g, ",space.").replace(/\n/g, ',Newline,here.');
              const resultt = result.replace(/\€/g, ",sentence,end.").replace(/\:/g, ',semicolon.').replace(/\¢/g, ",comma.");
 
     
