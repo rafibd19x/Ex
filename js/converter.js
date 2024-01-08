@@ -9,8 +9,8 @@ let textTitleCase;
 function upperCase() {
     textInput = document.getElementById("original-text").value;
     
-    const result = textInput.replace(/\./g, "€").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, 'chuto.b').replace(/V|v/g, 'Boro.v').replace(/N|n/g, 'chuto.n').replace(/M|m/g, 'Boro.m').replace(/P|p/g, 'pitha.p').replace(/E|e/g, 'eva.e').replace(/ +/g, "space").replace(/\n/g, 'Newline.here');
-             const resultt = result.replace(/\€/g, "sentence.end").replace(/\:/g, 'semicolon');
+    const result = textInput.replace(/\./g, "€").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, 'chuto.b.').replace(/V|v/g, 'Boro.v.').replace(/N|n/g, 'chuto.n.').replace(/M|m/g, 'Boro.m.').replace(/P|p/g, 'pitha.p.').replace(/E|e/g, 'eva.e.').replace(/ +/g, "space.").replace(/\n/g, 'Newline.here.');
+             const resultt = result.replace(/\€/g, "sentence.end.").replace(/\:/g, 'semicolon.');
 
     
     
