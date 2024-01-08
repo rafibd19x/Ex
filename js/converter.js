@@ -9,8 +9,8 @@ let textTitleCase;
 function upperCase() {
     textInput = document.getElementById("original-text").value;
     
-    const result = textInput.replace(/\./g, "$").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/ +/g, "@").replace(/\n/g, '#');
-             const resultt = result.replace(/\$/g, ".space.");
+    const result = textInput.replace(/\./g, "€").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/ +/g, ".space.now.").replace(/\n/g, '.New.line.here.');
+             const resultt = result.replace(/\€/g, ".sentrnce.end.");
     
     
     
