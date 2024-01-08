@@ -10,7 +10,8 @@ function upperCase() {
     textInput = document.getElementById("original-text").value;
     
     const result = textInput.replace(/\./g, "€").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/ +/g, ".space.now.").replace(/\n/g, '.New.line.here.');
-             const resultt = result.replace(/\€/g, ".sentrnce.end.");
+             const resultt = result.replace(/\€/g, ".sentence.end.").replace(/B|b/g, 'choto.b.').replace(/V|v/g, 'Boro.v.').replace(/N|n/g, 'choto.n.').replace(/M|m/g, 'Boro.m.').replace(/P|p/g, 'pitha.p.').replace(/E|e/g, 'eva.e.').replace(/\:/g, 'semi.colon.');
+
     
     
     
