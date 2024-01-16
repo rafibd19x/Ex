@@ -14,12 +14,31 @@ function upperCase() {
 
 const resultt = result.replace(/\€/g, ",fullstop.").replace(/\:/g, ',semicolon.').replace(/\¢/g, ",comma.").replace(/\ক/g, ',chuto,b.').replace(/\খ/g, ',Boro,v.').replace(/\গ/g, ',chuto,n.').replace(/\ঘ/g, ',Boro,m.').replace(/\ঙ/g, ',phhiie.').replace(/\চ/g, ',yiiiee.').replace(/\ছ/g, ',wo.').replace(/\জ/g, ',yiiuu.').replace(/\ঝ/g, ',ass.').replace(/\ঞ/g, ',arrrerr.').replace(/\₹/g, ',capital.').replace(/\অ/g, ',Answer to the question..Answer to question no. ').replace(/\আ/g, ',first braket.').replace(/\ই/g, ',second braket.');
 
+    //
 
+     let newStrxz = resultt.split(/space/g).join("space₹");
+
+let inputArray = newStrxz.split(/₹/);
+   let resultArray = [];
+   
+  
+inputArray.forEach((element, index) => {
+
+    if (index % 3 === 2) {
+      resultArray.push(element + "ঔ");
+    } else {
+      resultArray.push(element);
+    }
+  });
+
+const herex= resultArray.join(",")
+
+    //
     
     
     
     //textUpperCase = textInput.toUpperCase();
-    document.getElementById("original-text").value = resultt;
+    document.getElementById("original-text").value = herex;
 }
 
 function lowerCase() {
