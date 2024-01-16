@@ -21,7 +21,7 @@ const resultt = result.replace(/\€/g, ",fullstop.").replace(/\:/g, ',semicolon
         function addPlusAfterFourth(inputx) {
   
 let newStrxz = inputx.split(/space/g).join("space₹");
-console.log(newStrxz)
+
 let inputArray = newStrxz.split(/₹/);
    let resultArray = [];
    
