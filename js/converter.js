@@ -7,7 +7,7 @@ let textSentenceCase;
 let textTitleCase;
 
 function upperCase() {
-    textInput = document.getElementById("original-text").value;
+    const textInput = document.getElementById("original-text").value;
     //
      
     
