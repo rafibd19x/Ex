@@ -7,20 +7,47 @@ let textSentenceCase;
 let textTitleCase;
 
 function upperCase() {
-    textInput = document.getElementById("original-text").value;
+    const textInput = document.getElementById("original-text").value;
+    //
+     
     
-    const result = textInput.replace("0008.", "অ").replace(/\(/g, "আ").replace(/\)/g, "ই").replace(/\./g, "€").replace(/\,/g, "¢").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => '₹'+match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, 'ক').replace(/V|v/g, 'খ').replace(/N|n/g, 'গ').replace(/M|m/g, 'ঘ').replace(/P|p/g, 'ঙ').replace(/E|e/g, 'চ').replace(/O|o/g, 'ছ').replace(/U|u/g, 'জ').replace(/S|s/g, 'ঝ').replace(/R|r/g, 'ঞ').replace(/ +/g, ",space.").replace(/\n/g, ',Newline.here.');
+    const result = textInput.", "অ").replace(/\(/g, "আ").replace(/\)/g, "ই").replace(/\./g, "€").replace(/\,/g, "¢").replace(/[a-z]/g, match => match+ '.').replace(/[A-Z]/g, match => '₹'+match+ '.').replace(/[0-9]/g, match => match+ '.').replace(/B|b/g, 'ক').replace(/V|v/g, 'খ').replace(/N|n/g, 'গ').replace(/M|m/g, 'ঘ').replace(/P|p/g, 'ঙ').replace(/E|e/g, 'চ').replace(/O|o/g, 'ছ').replace(/U|u/g, 'জ').replace(/S|s/g, 'ঝ').replace(/R|r/g, 'ঞ').replace(/ +/g, ",space.").replace(/\n/g, ',Newline.here.');
              
 
 const resultt = result.replace(/\€/g, ",fullstop.").replace(/\:/g, ',semicolon.').replace(/\¢/g, ",comma.").replace(/\ক/g, ',chuto,b.').replace(/\খ/g, ',Boro,v.').replace(/\গ/g, ',chuto,n.').replace(/\ঘ/g, ',Boro,m.').replace(/\ঙ/g, ',phhiie.').replace(/\চ/g, ',yiiiee.').replace(/\ছ/g, ',wo.').replace(/\জ/g, ',yiiuu.').replace(/\ঝ/g, ',ass.').replace(/\ঞ/g, ',arrrerr.').replace(/\₹/g, ',capital.').replace(/\অ/g, ',Answer to the question..Answer to question no. ').replace(/\আ/g, ',first braket.').replace(/\ই/g, ',second braket.');
 
 
+    //
+        function addPlusAfterFourth(inputx) {
+  
+let newStrxz = inputx.split(/space/g).join("space₹");
+
+let inputArray = newStrxz.split(/₹/);
+   let resultArray = [];
+   
+  
+inputArray.forEach((element, index) => {
+
+    if (index % 3 === 2) {
+      resultArray.push(element + "ঔ");
+    } else {
+      resultArray.push(element);
+    }
+  });
+
+  return resultArray.join(",");
+}
+
+const inputx = resultt;
+    const inputxx=addPlusAfterFourth(inputx)
+    //
     
     
     
     //textUpperCase = textInput.toUpperCase();
-    document.getElementById("original-text").value = resultt;
+    document.getElementById("original-text").value = inputxx;
 }
+
 
 function lowerCase() {
     textInput = document.getElementById("original-text").value;
