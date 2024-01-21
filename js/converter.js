@@ -24,7 +24,7 @@ let inputArray = newStrxz.split(/₹/);
   
 inputArray.forEach((element, index) => {
 
-    if (index % 4 === 3) {
+    if (index % 3 === 2) {
       resultArray.push(element + "\n \n");
     } else {
       resultArray.push(element);
