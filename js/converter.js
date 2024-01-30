@@ -43,8 +43,47 @@ const herex= resultArray.join("")
 
 function lowerCase() {
     textInput = document.getElementById("original-text").value;
-    textLowerCase = textInput.toLowerCase();
-    document.getElementById("original-text").value = textLowerCase;
+    //textLowerCase = textInput.toLowerCase();
+
+const inputet = textInput
+
+const arrayy = inputet.split("\n");
+const numberr = arrayy.shift()*1
+const inpute = arrayy.join('\n');
+
+function transformInput(inpute) {
+  let words = inpute.split(/\n/g);
+  
+  let outpute = words.map((word, index) => ({
+       
+ word:word,number: index + 1
+  }));
+ const outputg = outpute.map(item => `${item.word} ${"="+item.number}`).join('\n');
+//console.log(outputg)
+ return outputg;
+}
+let outputx = transformInput(inpute);
+//console.log(outputx);
+
+   // {"a":"","e":"","g":[],"i":00,"l":0,"m":"বেতন, //মজুরি","mn":"","n":"","p":"","s":"","w":"Wage (ওয়েইজ)"}
+
+
+const outputex = outputx.split('\n').map(line => {
+    const [item1, item2,item3 ] = line.split('=');
+      const add1='{"a":"","e":"","g":[],"i":' 
+       const add2=',"l":0,"m":"'
+       const add3='","mn":"","n":"","p":"","s":"","w":"'
+       const add4='"},'
+      const numberadd=(numberr )-(-item3)
+
+    return [add1+numberadd+add2+item2+add3+item1+add4]
+//.join(', ');
+}).join('');
+
+//console.log(outputex);
+
+    
+    document.getElementById("original-text").value = outputex;
 }
 
 function sentenceCase() {
