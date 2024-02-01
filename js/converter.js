@@ -45,7 +45,7 @@ function lowerCase() {
     textInput = document.getElementById("original-text").value;
     //textLowerCase = textInput.toLowerCase();
 
-const inputet = textInput
+const inputet = textInput.replace(/\n\n+/g, '\n');
 
 const arrayy = inputet.split("\n");
 const numberr = arrayy.shift()*1
@@ -78,7 +78,7 @@ const outputex = outputx.split('\n').map(line => {
 
     return [add1+numberadd+add2+item2+add3+item1+add4]
 //.join(', ');
-}).join('');
+}).join('').slice(0, -1);
 
 //console.log(outputex);
 
