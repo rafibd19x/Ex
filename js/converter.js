@@ -73,13 +73,14 @@ let outputx = transformInput(inpute);
 
 const outputex = outputx.split('\n').map(line => {
     const [item1, item2,item3 ] = line.split('=');
-      const add1='{"a":"","e":"","g":[],"i":' 
+      const add1='{"a":"","e":"","g":["'   
+      const add1x='"],"i":' 
        const add2=',"l":0,"m":"'
        const add3='","mn":"","n":"","p":"","s":"","w":"'
        const add4='"},'
       const numberadd=(numberr )-(-item3)
 
-    return [add1+numberadd+add2+item2+add3+item1+add4]
+    return [add1+group+add1x+numberadd+add2+item2+add3+item1+add4]
 //.join(', ');
 }).join('').slice(0, -1);
 
