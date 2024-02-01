@@ -45,13 +45,16 @@ function lowerCase() {
     textInput = document.getElementById("original-text").value;
     //textLowerCase = textInput.toLowerCase();
 
-const inputet = textInput.replace(/\n\n+/g, '\n');
+const inputet = textInput.replace(/\n{2,}/g, '\n').trim()
 
 const arrayy = inputet.split("\n");
-const numberr = arrayy.shift()*1
+const arrayyx = arrayy.shift().split('@');
+const group = arrayyx[0].trim();
+const numberr = arrayyx[1].trim();
 const inpute = arrayy.join('\n');
 
-function transformInput(inpute) {
+    
+    function transformInput(inpute) {
   let words = inpute.split(/\n/g);
   
   let outpute = words.map((word, index) => ({
